@@ -2,7 +2,10 @@
   "compilerOptions": {
     "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Node",
+    // "module": "commonjs",
+    // "target": "ESNext",
+    // "lib": ["ESNext"],
     "sourceMap": true,
     "noEmit": false,
     "strict": true,

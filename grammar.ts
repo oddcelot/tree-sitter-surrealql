@@ -91,27 +91,24 @@ const CASTINGS = [/<(bool|int|float|string|number|decimal|datetime|duration)>/];
 const DURATIONS = [/\d+(y|w|d|h|m|s)+/];
 
 // https://github.com/stadelmanma/tree-sitter-fortran/blob/f73d473e3530862dee7cbb38520f28824e7804f6/grammar.js#L1628
-// function insensitive(str: string) {
-//   let reg = str
-//     .split("")
-//     .map((l) => `[${l.toLocaleLowerCase()}${l.toLocaleUpperCase()}]`)
-//     .join("");
-//   let result = new RegExp(reg);
-//   // return token(result, { word: true }));
-//   return token(result);
-// }
+function insensitive(str: string) {
+  let reg = str
+    .split("")
+    .map((l) => `[${l.toLocaleLowerCase()}${l.toLocaleUpperCase()}]`)
+    .join("");
+  let result = new RegExp(reg);
+  return token(result);
+}
 
-export default grammar({
+const surrealqGrammar = grammar({
   name: "surrealql",
-  // extras: ($) => ["s"],
+  extras: ($) => ["s"],
   rules: {
     source_file: ($) => "hello",
-    identifier: ($) => /[a-z_]+/,
-    // identifier: ($) => /[a-zA-Z_][a-zA-Z0-9_]*/,
-    keyword: ($) => token.immediate(choice(...KEYWORDS)),
-    // keyword: ($) => token.immediate(choice(...KEYWORDS.map(insensitive))),
+    identifier: ($) => /[a-zA-Z_][a-zA-Z0-9_]*/,
+    keyword: ($) => token.immediate(choice(...KEYWORDS.map(insensitive))),
   },
-  // word: ($) => /[a-zA-Z_][a-zA-Z0-9_]*/,
   word: ($) => $.identifier,
-  // word: ($) => /[a-zA-Z_][a-zA-Z0-9_]*/,
 });
+
+module.exports = surrealqGrammar;
