@@ -38,3 +38,5 @@ dist/
 *.o
 
 bindings
+/grammar.js
+/grammar.js.*

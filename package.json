@@ -1,12 +1,12 @@
 {
   "name": "tree-sitter-surrealql",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "types": "bindings/node",
   "scripts": {
     "build": "tree-sitter build",
-    "generate": "tree-sitter generate",
+    "generate": "tsc -p ./tsconfig.json && tree-sitter generate",
     "parse": "tree-sitter parse",
     "test": "tree-sitter test",
     "install": "node-gyp-build",
@@ -24,8 +24,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "20.14.10",
+    "prebuildify": "6.0.1",
     "tree-sitter-cli": "0.22.6",
-    "prebuildify": "6.0.1"
+    "typescript": "5.5.3"
   },
   "dependencies": {
     "node-gyp-build": "4.8.1"

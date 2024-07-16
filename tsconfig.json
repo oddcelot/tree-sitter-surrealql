@@ -1,23 +1,25 @@
 {
   "compilerOptions": {
-    // "typeRoots": ["./node_modules/@types"],
-    "module": "NodeNext",
-    "target": "es6",
-    "outDir": "out",
-    "lib": ["es6"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Bundler",
+    "sourceMap": true,
+    "noEmit": false,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "rootDir": ".",
+    "outDir": ".",
     "types": [
+      "node",
       "./node_modules/tree-sitter-cli/dsl",
       "./node_modules/tree-sitter/tree-sitter"
     ],
-    "sourceMap": true,
-    "rootDir": "src",
-    /* Strict Type-Checking Option */
-    "strict": true /* enable all strict type-checking options */,
-    /* Additional Checks */
-    "noUnusedLocals": true /* Report errors on unused locals. */
-    // "noImplicitReturns": true, /* Report error when not all code paths in function return a value. */
-    // "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statement. */
-    // "noUnusedParameters": true,  /* Report errors on unused parameters. */
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
-  "exclude": ["examples", "node_modules", ".vscode-test"]
+  "include": ["grammar.ts"],
+  "exclude": ["examples", "bindings", "build", "node_modules"]
 }
