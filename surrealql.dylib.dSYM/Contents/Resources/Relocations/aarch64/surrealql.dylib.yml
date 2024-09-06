@@ -2,19 +2,37 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/oddcelot/Code/projects/tree-sitter-surrealql/surrealql.dylib'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _tree_sitter_surrealql, symObjAddr: 0x0, symBinAddr: 0x3DB0, symSize: 0xC }
-  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _tree_sitter_surrealql, symObjAddr: 0x0, symBinAddr: 0x3DB0, symSize: 0xC }
-  - { offsetInCU: 0x58, offset: 0x58, size: 0x8, addend: 0x0, symName: _tree_sitter_surrealql.language, symObjAddr: 0x1D8, symBinAddr: 0x4000, symSize: 0x0 }
-  - { offsetInCU: 0x602, offset: 0x602, size: 0x8, addend: 0x0, symName: _ts_parse_table, symObjAddr: 0x140, symBinAddr: 0x3EF0, symSize: 0x0 }
-  - { offsetInCU: 0x630, offset: 0x630, size: 0x8, addend: 0x0, symName: _ts_small_parse_table, symObjAddr: 0x14C, symBinAddr: 0x3EFC, symSize: 0x0 }
-  - { offsetInCU: 0x651, offset: 0x651, size: 0x8, addend: 0x0, symName: _ts_small_parse_table_map, symObjAddr: 0x15C, symBinAddr: 0x3F0C, symSize: 0x0 }
-  - { offsetInCU: 0x672, offset: 0x672, size: 0x8, addend: 0x0, symName: _ts_parse_actions, symObjAddr: 0x190, symBinAddr: 0x3F40, symSize: 0x0 }
-  - { offsetInCU: 0x693, offset: 0x693, size: 0x8, addend: 0x0, symName: _ts_symbol_names, symObjAddr: 0x2C0, symBinAddr: 0x40E8, symSize: 0x0 }
-  - { offsetInCU: 0x6B4, offset: 0x6B4, size: 0x8, addend: 0x0, symName: _ts_symbol_metadata, symObjAddr: 0x164, symBinAddr: 0x3F14, symSize: 0x0 }
-  - { offsetInCU: 0x6D5, offset: 0x6D5, size: 0x8, addend: 0x0, symName: _ts_symbol_map, symObjAddr: 0x16E, symBinAddr: 0x3F1E, symSize: 0x0 }
-  - { offsetInCU: 0x6F6, offset: 0x6F6, size: 0x8, addend: 0x0, symName: _ts_non_terminal_alias_map, symObjAddr: 0x174, symBinAddr: 0x3F24, symSize: 0x0 }
-  - { offsetInCU: 0x717, offset: 0x717, size: 0x8, addend: 0x0, symName: _ts_alias_sequences, symObjAddr: 0x176, symBinAddr: 0x3F26, symSize: 0x0 }
-  - { offsetInCU: 0x73E, offset: 0x73E, size: 0x8, addend: 0x0, symName: _ts_lex_modes, symObjAddr: 0x178, symBinAddr: 0x3F28, symSize: 0x0 }
-  - { offsetInCU: 0x75F, offset: 0x75F, size: 0x8, addend: 0x0, symName: _ts_primary_state_ids, symObjAddr: 0x188, symBinAddr: 0x3F38, symSize: 0x0 }
-  - { offsetInCU: 0x774, offset: 0x774, size: 0x8, addend: 0x0, symName: _ts_lex, symObjAddr: 0xC, symBinAddr: 0x3DBC, symSize: 0x12C }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _tree_sitter_surrealql, symObjAddr: 0x0, symBinAddr: 0xFC4, symSize: 0xC }
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _tree_sitter_surrealql, symObjAddr: 0x0, symBinAddr: 0xFC4, symSize: 0xC }
+  - { offsetInCU: 0x5A, offset: 0x5A, size: 0x8, addend: 0x0, symName: _tree_sitter_surrealql.language, symObjAddr: 0x48EF0, symBinAddr: 0x50000, symSize: 0x0 }
+  - { offsetInCU: 0x605, offset: 0x605, size: 0x8, addend: 0x0, symName: _ts_parse_table, symObjAddr: 0x49B0E, symBinAddr: 0x4A4EE, symSize: 0x0 }
+  - { offsetInCU: 0x634, offset: 0x634, size: 0x8, addend: 0x0, symName: _ts_small_parse_table, symObjAddr: 0x494D0, symBinAddr: 0x49EB0, symSize: 0x0 }
+  - { offsetInCU: 0x656, offset: 0x656, size: 0x8, addend: 0x0, symName: _ts_small_parse_table_map, symObjAddr: 0x49620, symBinAddr: 0x4A000, symSize: 0x0 }
+  - { offsetInCU: 0x678, offset: 0x678, size: 0x8, addend: 0x0, symName: _ts_parse_actions, symObjAddr: 0x4D6AE, symBinAddr: 0x4E08E, symSize: 0x0 }
+  - { offsetInCU: 0x69A, offset: 0x69A, size: 0x8, addend: 0x0, symName: _ts_symbol_names, symObjAddr: 0x48FD8, symBinAddr: 0x500E8, symSize: 0x0 }
+  - { offsetInCU: 0x6BC, offset: 0x6BC, size: 0x8, addend: 0x0, symName: _ts_symbol_metadata, symObjAddr: 0x49664, symBinAddr: 0x4A044, symSize: 0x0 }
+  - { offsetInCU: 0x6DE, offset: 0x6DE, size: 0x8, addend: 0x0, symName: _ts_symbol_map, symObjAddr: 0x49842, symBinAddr: 0x4A222, symSize: 0x0 }
+  - { offsetInCU: 0x700, offset: 0x700, size: 0x8, addend: 0x0, symName: _ts_non_terminal_alias_map, symObjAddr: 0x49980, symBinAddr: 0x4A360, symSize: 0x0 }
+  - { offsetInCU: 0x722, offset: 0x722, size: 0x8, addend: 0x0, symName: _ts_alias_sequences, symObjAddr: 0x49982, symBinAddr: 0x4A362, symSize: 0x0 }
+  - { offsetInCU: 0x74A, offset: 0x74A, size: 0x8, addend: 0x0, symName: _ts_lex_modes, symObjAddr: 0x49988, symBinAddr: 0x4A368, symSize: 0x0 }
+  - { offsetInCU: 0x75F, offset: 0x75F, size: 0x8, addend: 0x0, symName: _ts_lex, symObjAddr: 0xC, symBinAddr: 0xFD0, symSize: 0x476C0 }
+  - { offsetInCU: 0x786, offset: 0x786, size: 0x8, addend: 0x0, symName: _ts_lex.map, symObjAddr: 0x4E2D6, symBinAddr: 0x4ECB6, symSize: 0x0 }
+  - { offsetInCU: 0x79C, offset: 0x79C, size: 0x8, addend: 0x0, symName: _ts_lex.map.156, symObjAddr: 0x4E442, symBinAddr: 0x4EE22, symSize: 0x0 }
+  - { offsetInCU: 0x7B2, offset: 0x7B2, size: 0x8, addend: 0x0, symName: _ts_lex.map.157, symObjAddr: 0x4E54E, symBinAddr: 0x4EF2E, symSize: 0x0 }
+  - { offsetInCU: 0x7C8, offset: 0x7C8, size: 0x8, addend: 0x0, symName: _ts_lex.map.158, symObjAddr: 0x4E65A, symBinAddr: 0x4F03A, symSize: 0x0 }
+  - { offsetInCU: 0x7DE, offset: 0x7DE, size: 0x8, addend: 0x0, symName: _ts_lex.map.159, symObjAddr: 0x4E7BA, symBinAddr: 0x4F19A, symSize: 0x0 }
+  - { offsetInCU: 0x7F4, offset: 0x7F4, size: 0x8, addend: 0x0, symName: _ts_lex.map.160, symObjAddr: 0x4E91A, symBinAddr: 0x4F2FA, symSize: 0x0 }
+  - { offsetInCU: 0x80A, offset: 0x80A, size: 0x8, addend: 0x0, symName: _ts_lex.map.161, symObjAddr: 0x4EA22, symBinAddr: 0x4F402, symSize: 0x0 }
+  - { offsetInCU: 0x820, offset: 0x820, size: 0x8, addend: 0x0, symName: _ts_lex.map.162, symObjAddr: 0x4EB2A, symBinAddr: 0x4F50A, symSize: 0x0 }
+  - { offsetInCU: 0x836, offset: 0x836, size: 0x8, addend: 0x0, symName: _ts_lex.map.163, symObjAddr: 0x4EC32, symBinAddr: 0x4F612, symSize: 0x0 }
+  - { offsetInCU: 0x84C, offset: 0x84C, size: 0x8, addend: 0x0, symName: _ts_lex.map.164, symObjAddr: 0x4ED3A, symBinAddr: 0x4F71A, symSize: 0x0 }
+  - { offsetInCU: 0x862, offset: 0x862, size: 0x8, addend: 0x0, symName: _ts_lex.map.165, symObjAddr: 0x4ED5E, symBinAddr: 0x4F73E, symSize: 0x0 }
+  - { offsetInCU: 0x878, offset: 0x878, size: 0x8, addend: 0x0, symName: _ts_lex.map.166, symObjAddr: 0x4EEC2, symBinAddr: 0x4F8A2, symSize: 0x0 }
+  - { offsetInCU: 0x88E, offset: 0x88E, size: 0x8, addend: 0x0, symName: _ts_lex.map.167, symObjAddr: 0x4EEE2, symBinAddr: 0x4F8C2, symSize: 0x0 }
+  - { offsetInCU: 0x8A4, offset: 0x8A4, size: 0x8, addend: 0x0, symName: _ts_lex.map.168, symObjAddr: 0x4EF06, symBinAddr: 0x4F8E6, symSize: 0x0 }
+  - { offsetInCU: 0x8BA, offset: 0x8BA, size: 0x8, addend: 0x0, symName: _ts_lex.map.169, symObjAddr: 0x4EF82, symBinAddr: 0x4F962, symSize: 0x0 }
+  - { offsetInCU: 0x8D0, offset: 0x8D0, size: 0x8, addend: 0x0, symName: _ts_lex.map.170, symObjAddr: 0x4EFFE, symBinAddr: 0x4F9DE, symSize: 0x0 }
+  - { offsetInCU: 0x8E6, offset: 0x8E6, size: 0x8, addend: 0x0, symName: _ts_lex.map.171, symObjAddr: 0x4F01E, symBinAddr: 0x4F9FE, symSize: 0x0 }
+  - { offsetInCU: 0x2DCC, offset: 0x2DCC, size: 0x8, addend: 0x0, symName: _ts_primary_state_ids, symObjAddr: 0x49A8C, symBinAddr: 0x4A46C, symSize: 0x0 }
+  - { offsetInCU: 0x2DE1, offset: 0x2DE1, size: 0x8, addend: 0x0, symName: _ts_lex_keywords, symObjAddr: 0x48E40, symBinAddr: 0x49E04, symSize: 0xAC }
 ...
